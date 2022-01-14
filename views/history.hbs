@@ -1,0 +1,24 @@
+{{#if username}}
+<table>
+    <tr>
+    <th>Date</th>
+    <th>Mood</th>
+    <th>Note</th>
+    <th>Feedback</th>
+    </tr>
+    {{#each moods}}
+    <tr>
+        <th>{{createdAt}}</th>
+        <th>{{mtype}}</th>
+        <th>{{note}}</th>
+        <th>{{feedback}}</th>
+    </tr>
+    {{/each}}
+
+</table>
+
+<a href="/historyMood/moodStats">See Your Mood Stats</a>
+<a href="/historyMood/feedback">Add feedback to a mood</a>
+{{else}}
+<span class="error">Not logged in</span>. <a href="register">Register</a> or <a href="login">login</a>.
+{{/if}}

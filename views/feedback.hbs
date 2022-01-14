@@ -1,0 +1,30 @@
+{{#if username}}
+
+<table>
+    <tr>
+    <th>Date</th>
+    <th>Mood</th>
+    <th>Note</th>
+    <th>Feedback</th>
+    </tr>
+    {{#each moods}}
+    <tr>
+        <th>{{createdAt}}</th>
+        <th>{{mtype}}</th>
+        <th>{{note}}</th>
+        <th>{{feedback}}</th>
+    </tr>
+    {{/each}}
+
+</table>
+
+<h1>Which date do you wanna add feedback?</h1>
+<form method="POST" action="feedback">
+	<div>Enter a date (e.g.2021-11-07)<input type="text" name="createdAt" value=""></div>
+    <div>Feedback<input type="text" name="feedback" value=""></div>
+	<div><input type="submit" value="add"></div>
+</form>
+
+{{else}}
+<span class="error">Not logged in</span>. <a href="register">Register</a> or <a href="login">login</a>.
+{{/if}}

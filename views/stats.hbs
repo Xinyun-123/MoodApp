@@ -1,0 +1,42 @@
+{{#if username}}
+
+<div>
+Week report:
+<table>
+  <tr>
+    <th>Awesome</th>
+    <th>Good</th>
+    <th>Okay</th>
+    <th>Bad</th>
+    <th>Terrible</th>
+  </tr>
+  <tr>
+    {{#each week}}
+    <td>{{this}}</td>
+    {{/each}}
+  </tr>
+</table>
+</div>
+
+<div>
+Month report:
+<table>
+  <tr>
+    <th>Awesome</th>
+    <th>Good</th>
+    <th>Okay</th>
+    <th>Bad</th>
+    <th>Terrible</th>
+  </tr>
+  <tr>
+    {{#each month}}
+    <td>{{this}}</td>
+    {{/each}}
+  </tr>
+</table>
+</div>
+<a href="..">back</a>
+
+{{else}}
+<span class="error">Not logged in</span>. <a href="../register">Register</a> or <a href="../login">login</a>.
+{{/if}}

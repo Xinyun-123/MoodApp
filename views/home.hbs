@@ -1,0 +1,9 @@
+<h1>Mood App!</h1>
+{{#if username}}
+<span class="success">Welcome, {{username}}</span>
+<nav><a href="/addMood">Add Mood</a> | <a href="/historyMood">History Mood</a> | <a href="/deleteMood">Delete Mood</a></nav>
+{{else}}
+<span class="error">Not logged in</span>. <a href="register">Register</a> or <a href="login">login</a>.
+{{/if}}
+
+</div>

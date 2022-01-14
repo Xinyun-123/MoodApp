@@ -1,0 +1,21 @@
+{{#if username}}
+<h1>HOW ARE YOU TODAY?</h1>
+<form method="POST" action="addMood">
+    <div>Date (yyyy-mm-dd) <input type="text" name="createdAt" value=""></div>
+	<div>
+        <label for="mtype">Choose a mood:</label>
+        <select name="mtype" id="mtype">
+            <option value="Awesome">Awesome</option>
+            <option value="Good">Good</option>
+            <option value="Okay">Okay</option>
+            <option value="Bad">Bad</option>
+            <option value="Terrible">Terrible</option>
+        </select>
+    </div>
+	<div>Do you want to talk more about it? <input type="text" name="note" value=""></div>
+	<div><input type="submit" value="add" id="btn"></div>
+</form>
+
+{{else}}
+<span class="error">Not logged in</span>. <a href="register">Register</a> or <a href="login">login</a>.
+{{/if}}

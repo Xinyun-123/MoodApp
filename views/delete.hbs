@@ -1,0 +1,10 @@
+{{#if username}}
+<h1>Which date do you wanna delete?</h1>
+<form method="POST" action="deleteMood">
+	<div>Enter a date (e.g.2021-11-07)<input type="text" name="createdAt" value=""></div>
+	<div><input type="submit" value="delete" id="btn"></div>
+</form>
+
+{{else}}
+<span class="error">Not logged in</span>. <a href="register">Register</a> or <a href="login">login</a>.
+{{/if}}
