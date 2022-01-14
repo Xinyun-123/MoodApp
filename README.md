@@ -75,9 +75,7 @@ Here's my [Site Map](MyMood_Site_Map.jpg).
 
 ## Research Topics
 
-(___TODO__: the research topics that you're planning on working on along with their point values... and the total points of research topics listed_)
-
-* (5 points) Automated functional testing for all of the routes
+* Automated functional testing for all of the routes
     * I am going to use Selenium
     * Selenium is suitable for automated functional test for web
     * 4 tests
@@ -86,12 +84,10 @@ Here's my [Site Map](MyMood_Site_Map.jpg).
       * View history
       * Delete a mood
     * ## [Automated Test GIF](Selenium_Test.gif) 
-* (3 points) Configuration management
+* Configuration management
     * use dotenv 
     * store database password in configuration
     * store environment variable "NODE_ENV" in configuration
-
-8 points total out of 8 required points
 
 
 ## [Link to Initial Main Project File](app.js) 
